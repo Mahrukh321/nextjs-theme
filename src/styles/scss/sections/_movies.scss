@@ -1,0 +1,354 @@
+// INDEX-17 UpcomingMovies SECTION
+.rv-17-up_movies_section {
+    padding: 130px 0;
+    background: #F2F2F3;
+    position: relative;
+    overflow: hidden;
+
+    @media #{$sm,$mobile,$sm-mobile} {
+        padding-top: 70px;
+    }
+
+    .owl-nav {
+        position: absolute;
+        content: "";
+        top: -25%;
+        left: 81%;
+
+        @media #{$xxxl,$xxl,$xl} {
+            left: 86%;
+        }
+
+        @media #{$lg} {
+            top: -37%;
+            left: 83%;
+        }
+
+        @media #{$md} {
+            top: -36%;
+            left: 77%;
+        }
+
+        @media #{$sm} {
+            top: -29%;
+            left: 71%;
+        }
+
+        @media #{$mobile,$sm-mobile} {
+            display: none;
+        }
+
+        .owl-prev {
+            @include slide_btn;
+
+            i {
+                margin: 0 5px;
+                background: #FFFFFF;
+                color: #020208;
+            }
+        }
+
+        .owl-next {
+            @include slide_btn;
+
+            i {
+                margin: 0 5px;
+                background: #FFFFFF;
+                color: #020208;
+            }
+        }
+    }
+
+    .rv-17-upmovies_title {
+        padding-bottom: 50px;
+
+        @media #{$sm-mobile} {
+            padding-bottom: 30px;
+        }
+
+        .rv-17-upmovies_sub_heading {
+            color: #000000;
+            font-weight: 600;
+            position: relative;
+            padding-left: 10px;
+            text-transform: uppercase;
+            font-family: $mulish;
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 2px;
+                background: #DFE11B;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .rv-17-upmovies_heading {
+            color: #020208;
+            font-size: 50px;
+            font-weight: 800;
+            margin: 0;
+            padding-top: 7px;
+            font-family: $mulish;
+
+            @media #{$sm,$mobile} {
+                font-size: 35px;
+            }
+
+            @media #{$sm-mobile} {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .rv-17-single_upmovies {
+        position: relative;
+
+        .rv-17-single_upmovies_image {
+            height: auto;
+            width: 100%;
+        }
+
+        .rv-17-single_upmovies_btn {
+            @include play_btn;
+            background-color: #FFFFFF;
+            color: #020208;
+
+            &:hover {
+                background-color: #020208;
+                color: #FFFFFF;
+            }
+        }
+
+        .rv-17-single_upmovies_details {
+            display: flex;
+            column-gap: 20px;
+            background: #020208;
+            padding: 20px 20px;
+            bottom: -50px;
+            position: absolute;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 0.5s;
+
+            // position: relative;
+            &::after {
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background: #DFE11B;
+                content: '';
+                transition: 0.2s;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            .rv-17-single_upmovies_details_content {
+
+                p {
+                    margin: 0;
+                    color: rgba(255, 255, 255, 0.6);
+                    font-family: $mulish;
+
+                    @media #{$sm-mobile} {
+                        font-size: 12px;
+                    }
+                }
+
+                h4 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #FFFFFF;
+                    margin: 0;
+                    padding-bottom: 10px;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    font-family: $mulish;
+
+                    &:hover {
+                        color: #DFE11B;
+                    }
+
+                    @media #{$md,$sm,$mobile} {
+                        font-size: 18px;
+                    }
+
+                    @media #{$sm-mobile} {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+}
+
+// INDEX-17 Top Rated Movies SECTION 
+.rv-17-toprate_movies_section {
+    padding: 120px 0;
+
+    @media #{$md,$sm,$mobile,$sm-mobile} {
+        padding: 70px 0;
+    }
+
+    .rv-17-toprate_movi_title {
+        text-align: center;
+        padding-bottom: 60px;
+
+        @media #{$mobile,$sm-mobile} {
+            padding-bottom: 40px;
+        }
+
+        .rv-17-toprate_movi_sub_heading {
+            color: #000000;
+            font-weight: 600;
+            position: relative;
+            padding-left: 10px;
+            text-transform: uppercase;
+            font-family: $mulish;
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 2px;
+                background: #DFE11B;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .rv-17-toprate_movi_heading {
+            color: #020208;
+            font-size: 50px;
+            font-weight: 800;
+            margin: 0;
+            padding-top: 7px;
+            font-family: $mulish;
+
+            @media #{$mobile} {
+                font-size: 35px;
+            }
+
+            @media #{$sm-mobile} {
+                font-size: 27px;
+            }
+        }
+    }
+
+    .rv-17-toprate_movies_tab {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(2, 2, 8, 0.1);
+        height: 520px;
+
+        @media #{$md,$sm,$mobile,$sm-mobile} {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .tabs-stage {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+
+            .tab_video {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .rv-17-toprate_movi_video {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .rv-17-toprate_movi_list {
+        height: 450px;
+        overflow-y: scroll;
+        -webkit-scrollbar-width: thin;
+        scrollbar-width: thin;
+        -webkit-scrollbar-color: #DFE11B #F2F2F3;
+        scrollbar-color: #DFE11B #F2F2F3;
+        margin-left: 20px;
+
+        .rv-17-toprate_movi_single_list {
+            display: flex;
+            column-gap: 20px;
+            background: rgba(2, 2, 8, 0.2);
+            padding: 20px;
+            margin: 15px 0;
+            transition: 0.3s;
+
+            &:hover {
+                background: #DFE11B;
+            }
+
+            .rv-17-toprate_movi_list_image {
+                height: 100px;
+                width: 150px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .rv-17-toprate_movi_list_content {
+                .rv-17-toprate_movi_list_content_meta {
+                    display: flex;
+                    column-gap: 10px;
+                    align-items: center;
+                    padding-bottom: 10px;
+
+                    p {
+                        font-family: $mulish;
+                        color: #020208;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+
+                    .reating_image {
+                        height: 36px;
+                        width: 36px;
+                    }
+
+                    span {
+                        font-family: $mulish;
+                        color: #020208;
+                        border: 1px solid rgba(2, 2, 8, 0.2);
+                        padding: 2px 8px;
+                        border-radius: 15px;
+                    }
+                }
+
+                h3 {
+                    font-family: $mulish;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin: 0;
+                    cursor: pointer;
+
+                    a {
+                        color: #020208;
+                    }
+
+                }
+            }
+        }
+    }
+}

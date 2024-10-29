@@ -1,0 +1,1097 @@
+// rv-31-app-landing
+
+.rv-31-about {
+    @include md {
+        margin-top: 60px;
+    }
+
+    @include xs {
+        padding: 0 15px;
+    }
+}
+
+
+.rv-31-abt-info-1 {
+
+    &__img {
+        height: 100%;
+
+        img {
+            border-radius: 8px 0 0 8px;
+            height: 100%;
+
+            @include md {
+                border-radius: 8px 8px 0 0;
+            }
+        }
+    }
+
+    .rv-31-abt-info-1-content {
+        background-color: transparent;
+        border-radius: 0 8px 8px 0;
+        overflow: hidden;
+
+    }
+
+    &__item {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        border-bottom: 1px solid $border-color-2;
+        padding: 50px 100px 35px 50px;
+        background-color: $bacground1;
+
+        @include xl {
+            padding: 40px 80px 35px 50px;
+        }
+
+        @include md {
+
+            margin-bottom: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        @include sm {
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @include xs {
+            gap: 25px;
+            margin-bottom: 10px;
+        }
+
+        @include xxs {
+            padding: 30px;
+            gap: 15px;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &-text {
+            h6 {
+                font-family: var(--inter);
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: $text-color-1;
+                margin-bottom: 18px;
+
+                @include lg {
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+
+                @include xxs {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            p {
+                color: $sub-title;
+                opacity: 0.6;
+                margin-top: 0;
+                font-size: 15px;
+                font-family: var(--inter);
+                font-weight: 500;
+
+                @include xxs {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+            }
+        }
+    }
+
+    &__item-icon {
+        img {
+            @include xs {
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.rv-31-abt-2 {
+    @include md {
+        margin-top: 35px;
+        margin-bottom: 60px;
+    }
+}
+
+.rv-31-abt-info-2 {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 160px;
+
+    @include md {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    @include sm {
+        margin-right: 0;
+    }
+
+    & .abt-info-2__item {
+        gap: 15px;
+        padding: 0;
+        border-bottom: none;
+        margin-bottom: 35px;
+        background-color: transparent;
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        @include md {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        @include sm {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    & .abt-info-2__text {
+        h6 {
+            font-size: 18px;
+            margin-bottom: 6px;
+
+            @include xxs {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+.rv-31-more-detaisl {
+    @include rv-31-btn;
+    background-color: $purple;
+    width: 190px;
+    height: 44px;
+    padding: 13px 20px;
+    text-align: center;
+
+    @include md {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+// rv-32-seo =============
+
+.rv-32-about {
+    background-color: $bacground3;
+
+    @include md {
+        margin-top: 55px;
+        padding-bottom: 80px;
+        padding-top: 75px;
+    }
+
+    & .rv-32-sec-title {
+        img {
+            right: 35px !important;
+
+            @include xs {
+                display: none;
+            }
+        }
+    }
+
+    .rv-32-about-contant {
+        @include sm {
+            padding-right: 0;
+        }
+
+        .rv-32-section-heading {
+            @include sm {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .rv-32-about-contant.pr-80 {
+        @include md {
+            padding-right: 0;
+            max-width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    .rv-32-about-img {
+        @include md {
+            text-align: center;
+        }
+    }
+}
+
+.rv-32-about-item-container {
+    background-color: white;
+    border-radius: 10px;
+
+    .rv-32-about-item {
+        height: 80px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        transition: 0.2s all;
+
+        @include lg {
+            height: 60px;
+        }
+
+        &__title {
+            font-family: var(--inter);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28px;
+            color: $text-color-5;
+            margin-bottom: 0;
+
+            @include lg {
+                font-size: 18px;
+            }
+
+            @include xs {
+                font-size: 16px;
+            }
+        }
+
+        &:hover {
+            background-color: $btn-color-2;
+            border-radius: 10px;
+
+            .rv-32-about-item__title {
+                color: white;
+            }
+        }
+    }
+}
+
+.rv-32-about-item__btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid $border-color-3 ;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-color-5;
+
+    @include lg {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.rv-32-about-img {
+    img {
+        @include md {
+            margin-top: 60px;
+        }
+    }
+}
+
+// rv-33-security ==================
+
+.rv-33-abt {
+    @include md {
+        margin-top: 30px;
+    }
+}
+
+.rv-33-abt-bg {
+    background-color: $rv-33-bg-color;
+    padding: 110px 150px 110px 110px;
+
+    @include xl {
+        padding-right: 110px;
+    }
+
+    @include lg {
+        padding: 110px 80px 120px;
+    }
+
+    @include md {
+        padding: 60px;
+    }
+
+    @include md {
+        padding: 60px 50px;
+    }
+
+    @include xs {
+        padding: 60px 35px;
+    }
+
+    @include xxs {
+        padding: 60px 20px;
+    }
+}
+
+.rv-33-abt-content {
+
+    padding-right: 20px;
+
+    @include md {
+        text-align: center;
+    }
+
+    &__text {
+
+        @include lg {
+            br {
+                display: none;
+            }
+        }
+
+        @include md {
+            text-align: center;
+        }
+
+        @include xs {
+            line-height: 24px;
+        }
+
+        @include xxs {
+            font-size: 15px;
+        }
+
+    }
+}
+
+.rv-33-abt-1__img {
+
+    text-align: right;
+
+    @include md {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    @include xxs {
+        padding-top: 35px;
+    }
+}
+
+.rv-33-abt-tab-container {
+    background-color: #FBF0D0;
+    padding: 7px;
+    border-radius: 7px;
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+
+    @include md {
+        margin-top: 50px;
+    }
+
+    @include sm {
+        text-align: center;
+    }
+
+    .rv-33-tab-btn {
+        padding: 0 15px;
+        height: 35px;
+        background-color: transparent;
+        color: $text-color-2;
+        margin-right: 5px;
+        font-weight: 500;
+        font-size: 14px;
+        position: relative;
+
+
+
+
+        @include md {
+            margin-right: 0;
+            padding: 0 10px;
+        }
+
+        @include sm {
+            margin-bottom: 25px;
+        }
+
+        &.active {
+            background-color: white;
+            border-radius: 5px;
+            color: $text-color-1;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: url('/assets/img/Software/about/rv-33-abt-vector.png') no-repeat;
+                left: 10%;
+                bottom: -20px;
+                height: 5px;
+                width: 100%;
+                display: inline-block;
+
+                @include sm {
+                    bottom: -12px;
+                }
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                background: url('/assets/img/Software/about/rv-33-abt-vector2.png') no-repeat;
+                left: 42%;
+                top: -40px;
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+
+                @include sm {
+                    top: -27px;
+                }
+            }
+        }
+    }
+}
+
+.rv-33-abt-2 {
+    margin-top: 60px;
+
+    @include md {
+        margin-top: 40px;
+    }
+
+    // tab pane option
+    .rv-33-tab-pane {
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity .5s ease, visibility .5s ease, max-height .5s ease;
+
+
+        @include md {
+            display: block;
+        }
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            max-height: 600px;
+
+            @include md {
+                max-height: 850px;
+            }
+        }
+
+    }
+
+    .rv-33-abt-content {
+        @include md {
+            text-align: center;
+        }
+
+        .rv-section-title {
+            font-size: 40px;
+
+            @include xxl {
+                font-size: 36px;
+                line-height: 40px;
+            }
+
+            @include xl {
+                font-size: 32px;
+                line-height: 36px;
+            }
+
+            @include lg {
+                font-size: 30px;
+                line-height: 34px;
+            }
+
+            @include md {
+                font-size: 26px;
+                line-height: 30px;
+            }
+
+            @include sm {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            @include xs {
+                font-size: 22px;
+                line-height: 26px;
+            }
+
+            @include xxs {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .rv-33-abt-btn {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        margin-bottom: 20px;
+
+        @include md {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        @include sm {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+
+// rv-34-it service ======================
+
+.rv-34-abt {
+    background-color: #F7F7FA;
+    padding: 85px 0;
+    margin-top: 200px;
+    margin-bottom: 225px;
+
+    @include md {
+        padding: 125px 0;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        padding-bottom: 50px;
+    }
+
+}
+
+.rv-34-abt-imgs {
+    position: relative;
+    height: 100%;
+
+    @include md {
+        text-align: center;
+    }
+
+    .rv-34-big-img {
+        position: absolute;
+        top: -190px;
+
+        @include md {
+            position: relative;
+        }
+    }
+
+    .rv-34-sm-img {
+        z-index: 2;
+        position: absolute;
+        bottom: -70px;
+        right: 10px;
+
+        @include xl {
+            right: -40px;
+        }
+
+        @include md {
+            bottom: 220px;
+        }
+
+        @include xxs {
+            display: none;
+        }
+    }
+}
+
+.rv-34-abt-content {
+    padding-left: 55px;
+
+    @include md {
+        text-align: center;
+        padding-left: 0;
+        margin-top: -130px;
+    }
+
+    &__text {
+        font-family: var(--mulish);
+        color: $text-color-5;
+
+        @include xxs {
+            line-height: 24px;
+            font-size: 15px;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include md {
+            justify-content: center;
+        }
+
+        .rv-34-btn {
+            color: $text-color-5;
+            border: 1px solid rgba(5, 5, 5, 0.14);
+
+        }
+
+        span {
+            color: $text-color-5;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 10px;
+
+            @include xxs {
+                display: none;
+            }
+        }
+    }
+}
+
+.rv-34-vdo-btn {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: $rv-34-color-1;
+    color: black;
+    animation: ripple 2s linear infinite;
+    padding-top: 15px;
+    text-align: center;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgb(5 5 5 / 6%), 0 0 0 10px rgb(5 5 5 / 6%), 0 0 0 20px rgb(5 5 5 / 6%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgb(5 5 5 / 6%), 0 0 0 20px rgb(5 5 5 / 6%), 0 0 0 40px rgb(255 255 255 / 0%);
+    }
+}
+
+// rv-35- start up ========================
+
+.rv-35-abt {
+    @include md {
+        margin-top: 60px;
+    }
+}
+
+.rv-35-abt-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include md {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rv-35-section-title {
+        @include md {
+            text-align: center;
+        }
+    }
+
+    .rv-35-tag {
+        @include md {
+            margin: auto;
+        }
+    }
+}
+
+.rv-35-abt-list {
+
+
+    li {
+        font-family: var(--mulish);
+        font-weight: 500;
+        font-size: 16px;
+        color: #040E1F;
+        line-height: 40px;
+
+        @include xxs {
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        i {
+            height: 20px;
+            width: 20px;
+            background: linear-gradient(to right bottom, rgba(34, 225, 127, 1), rgba(14, 172, 96, 1));
+            border-radius: 50%;
+            color: white;
+            padding: 2px;
+            margin-right: 12px;
+
+        }
+    }
+}
+
+.rv-35-abt-img {
+    background: #0D3909;
+
+    @include md {
+        margin-top: 30px;
+    }
+
+    img {
+        @include md {
+            width: 100%;
+        }
+    }
+}
+
+// rv-36-digital marketing ================
+
+.rv-36-abt-img {
+    height: 100%;
+
+    img {
+        height: 100%;
+        transform: translateY(-100px);
+
+        @include lg {
+            transform: translateY(0);
+            width: 100%;
+        }
+    }
+}
+
+.rv-36-abt-vdo-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    background-color: rgba(5, 5, 5, 0.8);
+    color: white;
+    display: grid;
+    place-items: center;
+
+
+    i {
+        font-size: 28px;
+    }
+}
+
+.rv-36-abt-img-text {
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+    color: white;
+    text-transform: uppercase;
+    padding: 84px 45px;
+    background-color: #F2584C;
+    width: max-content;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @include xxxl {
+        font-size: 22px;
+        line-height: 1.4;
+        padding: 60px 45px;
+    }
+
+    @include xl {
+        font-size: 20px;
+        padding: 30px 40px;
+    }
+}
+
+.rv-36-abt-content {
+    padding: 140px 105px;
+    background-color: #F5F5F5;
+    height: 100%;
+
+    @include xl {
+        padding: 100px 90px;
+    }
+
+    @include lg {
+        text-align: center;
+        padding: 100px 90px;
+    }
+
+    .rv-36-section-title {
+
+        .rv-36-tag {
+            @include lg {
+                margin: auto;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__text {
+            @include xxxl {
+                font-size: 50px;
+                line-height: 1.1;
+            }
+
+            @include xxl {
+                font-size: 44px;
+            }
+
+            @include xl {
+                font-size: 35px;
+            }
+        }
+    }
+
+    &__tabs {
+        margin-top: 25px;
+        margin-bottom: 26px;
+        display: flex;
+        gap: 25px;
+
+        @include xxl {
+            gap: 10px;
+        }
+
+        @include lg {
+            justify-content: center;
+        }
+
+        &-tab {
+            font-family: var(--inter);
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 60px;
+            background-color: transparent;
+            border: 1px solid rgba(8, 28, 21, 0.14);
+            padding: 2px 50px 2px 24px;
+            transition: 0s;
+
+            @include xxxl {
+                padding: 2px 20px;
+            }
+
+            @include xxl {
+                padding: 2px 10px;
+            }
+
+            &:hover {
+                border-left: 2px solid $rv-36-btnColor;
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+
+            }
+        }
+    }
+
+    &__text {
+        font-family: var(--mulish);
+        color: #020208;
+        opacity: 0.7;
+
+        br {
+            @include xxxl {
+                display: none;
+            }
+
+            @include lg {
+                display: block;
+            }
+        }
+    }
+
+    .rv-36-btn {
+        background-color: transparent;
+        color: #020208;
+        border: 1px solid rgba(8, 28, 21, 0.14);
+    }
+}
+
+// rv-37-software ===========================
+
+.rv-37-abt {
+    @include lg {
+        margin-bottom: 100px;
+    }
+
+    @include md {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+.rv-37-abt-1,
+.rv-37-abt-2 {
+    padding: 0 50px;
+
+    @include xxs {
+        padding: 0 15px;
+    }
+
+}
+
+.rv-37-abt__img {
+    margin-left: -50px;
+
+    @include md {
+        margin-left: 0;
+    }
+
+    img {
+        @include xs {
+            margin-left: 15px;
+        }
+
+        @include xxxs {
+            margin-left: 20px;
+        }
+    }
+
+
+}
+
+.rv-37-abt__content {
+    padding-top: 28px;
+
+    @include md {
+        text-align: center;
+    }
+
+    .rv-37-section-header-text {
+        @include xl {
+            text-align: justify;
+            line-height: 24px;
+            margin-right: 50px;
+
+            br {
+                display: none;
+            }
+        }
+
+        @include md {
+            text-align: center;
+            margin-right: 0;
+        }
+
+        @include sm {
+            line-height: 22px;
+            font-size: 15px;
+        }
+
+        @include xs {
+            margin-right: 0;
+        }
+
+        @include xxs {
+            font-size: 13px;
+        }
+    }
+
+    .rv-37-abt-1-btn {
+        border: none;
+        background-color: rgba(0, 82, 204, 0.1);
+        color: $rv-37-btnColor;
+        border-radius: 20px;
+
+        @include xs {
+            padding: 7px 15px;
+        }
+    }
+}
+
+.rv-37-abt-2__item {
+    font-family: var(--inter);
+    font-weight: bold;
+    font-size: 18px;
+    color: $text-color-1;
+    border: none;
+    border-bottom: 1px solid rgba(10, 37, 64, 0.1);
+    width: 80%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @include md {
+        margin: auto;
+        justify-content: center;
+    }
+
+    @include xs {
+        font-size: 16px;
+        width: 85%;
+    }
+
+    @include xxs {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    span {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgba(10, 37, 64, 0.06);
+        color: $text-color-1;
+        text-align: center;
+        padding-top: 5px;
+
+        @include xs {
+            height: 30px;
+            width: 30px;
+            padding-top: 2px;
+        }
+
+    }
+}
+
+.bb-none {
+    border-bottom: none;
+
+    @include xs {
+        margin-top: 0 !important;
+    }
+}
+
+.rv-37-abt-2 {
+    .row {
+        @include md {
+
+            .img-order {
+                order: 2;
+            }
+
+        }
+    }
+}

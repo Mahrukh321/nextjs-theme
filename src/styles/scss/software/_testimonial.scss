@@ -1,0 +1,1079 @@
+// rv-31-app landing  ================================
+
+.rv-31-testimonial {
+
+    &__img {
+        height: 100%;
+
+        & img {
+            height: 100%;
+
+            @include sm {
+                width: 100%;
+            }
+        }
+    }
+
+
+    & .testimonial-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include md {
+            display: block;
+            text-align: center;
+        }
+
+        .rv-31-sec-title {
+            @include md {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__feedback {
+        background-color: $bacground2;
+        padding: 161px 40px;
+        position: relative;
+        height: 100%;
+
+        @include lg {
+            padding: 100px 40px;
+        }
+
+        @include md {
+            padding: 60px 40px;
+        }
+
+        @include sm {
+            padding: 40px 30px;
+        }
+
+        @include xs {
+            padding: 20px;
+        }
+    }
+
+    &__shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__text {
+        color: white;
+        margin-bottom: 50px;
+
+        @include sm {
+            text-align: center;
+        }
+
+        @include xs {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__client {
+        color: white;
+
+        @include sm {
+            text-align: center;
+        }
+
+        h6 {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: var(--inter);
+            color: white;
+            margin-bottom: 5px;
+
+            @include xs {
+                margin-bottom: 0;
+            }
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+
+    &__controllar {
+
+        background-color: $bacground2;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        @include md {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        & button {
+            display: grid;
+            height: 100%;
+            place-items: center;
+            color: white;
+            border: 1px solid #b3b3b340;
+
+            @include md {
+                padding: 25px;
+            }
+
+            @include sm {
+                padding: 15px;
+            }
+
+            @include xxs {
+                padding: 10px;
+            }
+
+            i {
+                font-size: 30px;
+
+                @include sm {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        & button:last-child {
+            border-top: none;
+        }
+    }
+
+    &-review {
+        margin-top: 40px;
+
+        @include md {
+            margin-top: 20px;
+        }
+
+        & h6 {
+            display: inline-block;
+        }
+
+        & span {
+            font-size: 12px;
+            color: $text-color-4;
+        }
+
+    }
+
+    @include md {
+        margin-top: 40px;
+    }
+}
+
+
+// rv-32-seo ================
+
+.rv-32-testimonial {
+    background-color: $bacground3;
+
+    @include md {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .rv-32-sec-title {
+
+        br {
+            @include xxs {
+                display: none;
+            }
+        }
+
+        img {
+            left: 400px;
+
+            @include xl {
+                left: 270px;
+            }
+
+            @include lg {
+                left: 190px;
+                top: 36px;
+            }
+
+            @include sm {
+                left: 165px;
+                top: 31px;
+            }
+
+            @include xs {
+                display: none;
+            }
+        }
+    }
+
+    .rv-32-btns {
+        display: flex;
+        gap: 5px;
+
+        @include sm {
+            display: none;
+        }
+    }
+}
+
+.rv-32-btns {
+
+    .rv-32-about-item__btn {
+        &:hover {
+            background-color: $btn-color-2;
+            color: white;
+        }
+    }
+}
+
+.rv-32-testimonial-slider {
+    padding: 0 90px;
+
+    @include md {
+        padding: 0 70px;
+    }
+
+    @include sm {
+        padding: 0 50px;
+    }
+
+    @include xs {
+        padding: 0 25px;
+    }
+}
+
+.rv-29-testimonial-item {
+    padding: 35px 30px 60px 30px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    @include xs {
+        padding: 20px;
+    }
+
+    &__text {
+        font-family: var(--inter);
+        font-size: 15px;
+        color: $text-color-5;
+        margin-top: 20px;
+
+        @include xs {
+            font-size: 14px;
+            line-height: 22px;
+            margin-top: 10px;
+        }
+    }
+
+    &__author {
+        margin-top: 40px;
+
+        @include sm {
+            margin-top: 25px;
+        }
+
+        @include xs {
+            margin-top: 20px;
+        }
+
+        img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+
+            @include xs {
+                height: 35px;
+                width: 35px;
+            }
+        }
+
+        span {
+            font-family: var(--inter);
+            font-size: 15px;
+            font-weight: 600;
+            margin-left: 30px;
+            position: relative;
+            color: black;
+
+            @include xs {
+                font-size: 13px;
+                margin-left: 20px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 15px;
+                top: 11px;
+                left: -20px;
+                background-color: black;
+
+                @include xs {
+                    width: 10px;
+                    left: -15px;
+                }
+            }
+        }
+    }
+}
+
+.rv-29-testimonial-rating {
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    span {
+        color: $text-color-5;
+
+    }
+
+    a {
+        font-weight: 600;
+        text-decoration-line: underline;
+        color: black;
+    }
+
+    @include md {
+        margin-top: 30px;
+    }
+
+    @include xs {
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+
+}
+
+// rv-33-security ======================
+
+.rv-33-testimonial-subtitle {
+
+    color: $text-color-2;
+    font-weight: 500;
+
+    @include md {
+        br {
+            display: none;
+        }
+    }
+
+    @include xxs {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+}
+
+.rv-33-testimonial-img {
+    position: relative;
+    height: 100%;
+
+    img {
+        border-radius: 15px;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__vbtn {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.14);
+        padding: 3px 20px;
+        position: absolute;
+        top: 24px;
+        right: 30px;
+        border: 1px solid white;
+        border-radius: 15px;
+
+        @include xs {
+            padding: 2px 15px;
+            top: 20px;
+            right: 20px;
+
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+.rv-33-testimonial {
+
+    @include md {
+        margin-top: 55px;
+        margin-bottom: 60px;
+    }
+
+    .rv-29-testimonial-item {
+
+        box-shadow: none;
+        background-color: $rv-33-bg-color;
+        border-radius: 15px;
+
+        @include lg {
+            padding: 30px 25px;
+        }
+
+        @include md {
+            margin-top: 20px;
+        }
+
+        &__text {
+            @include lg {
+                font-size: 14px;
+            }
+        }
+
+        &__author {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            @include lg {
+                margin-top: 25px;
+            }
+
+            h6 {
+                font-size: 14px;
+                color: #1D1D1D;
+                font-weight: 600;
+                margin-bottom: -3px;
+            }
+
+            span {
+
+
+                color: #6C7C8C;
+                margin-left: 0;
+                font-size: 12px;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// rv-33 client slider ======================
+.rv-33-client-slider-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 13px;
+    color: #0F0F0F;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+
+    @include xxs {
+        font-size: 12px;
+    }
+
+}
+
+.rv-33-clients {
+    @include md {
+        margin-bottom: 25px;
+    }
+
+}
+
+.rv-33-client-slider {
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+}
+
+// rv-34-it service===================
+
+.rv-34-testimonial-sec {
+
+    position: relative;
+    padding: 95px 160px 105px;
+
+    @include xl {
+        padding: 130px 120px;
+    }
+
+    @include md {
+        padding: 60px;
+    }
+
+    @include sm {
+        padding: 30px;
+    }
+
+    @include xxs {
+        padding: 15px;
+    }
+
+    & .rv-28-colon {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -5px;
+        z-index: -2;
+
+        @include xxs {
+            bottom: 20%;
+        }
+    }
+
+    & .rv-28-client__1 {
+        height: 100px;
+        width: 100px;
+        top: 50%;
+        left: 200px;
+        transform: translateY(-50%);
+        @include rv-34-client;
+
+        @include xxl {
+            left: 180px;
+        }
+
+        @include lg {
+            left: 120px;
+            height: 80px;
+            width: 80px;
+        }
+
+        @include md {
+            left: 40%;
+            top: 90%;
+            height: 60px;
+            width: 60px;
+        }
+    }
+
+    & .rv-28-client__2 {
+        height: 100px;
+        width: 100px;
+        top: 50%;
+        right: 200px;
+        transform: translateY(-50%);
+        @include rv-34-client;
+
+        @include xxl {
+            right: 180px;
+        }
+
+        @include lg {
+            right: 120px;
+            height: 80px;
+            width: 80px;
+        }
+
+        @include md {
+            right: 40%;
+            top: 90%;
+            height: 60px;
+            width: 60px;
+        }
+    }
+
+    & .rv-28-client__3 {
+        top: 18%;
+        left: 350px;
+        @include rv-34-client;
+
+        @include xxl {
+            left: 290px;
+        }
+
+        @include lg {
+            left: 220px;
+        }
+
+        @include md {
+            left: 30%;
+            top: 87%;
+        }
+    }
+
+    & .rv-28-client__4 {
+        top: 18%;
+        right: 350px;
+        @include rv-34-client;
+
+        @include xxl {
+            right: 290px;
+        }
+
+        @include xxl {
+            right: 290px;
+        }
+
+        @include lg {
+            right: 220px;
+        }
+
+        @include md {
+            right: 30%;
+            top: 87%;
+        }
+    }
+
+    & .rv-28-client__5 {
+        bottom: 18%;
+        left: 350px;
+        @include rv-34-client;
+
+        @include xxl {
+            left: 290px;
+        }
+
+        @include xxl {
+            left: 220px;
+        }
+
+        @include md {
+            bottom: 6%;
+            left: 20%;
+        }
+    }
+
+    & .rv-28-client__6 {
+        bottom: 18%;
+        right: 350px;
+        @include rv-34-client;
+
+        @include xxl {
+            right: 290px;
+        }
+
+        @include xxl {
+            right: 220px;
+        }
+
+        @include md {
+            bottom: 6%;
+            right: 20%;
+        }
+    }
+
+    .rv-34-section-heading {
+        @include sm {
+            margin-bottom: 10px;
+        }
+    }
+
+    .rv-34-section-title {
+        span {
+            color: $rv-33-btn-color;
+        }
+    }
+}
+
+
+.rv-28-client-review {
+    text-align: center;
+
+    & p {
+        font-family: var(--mulish);
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0 180px;
+        margin-top: 40px;
+
+        @include lg {
+            padding: 0 90px;
+            margin-top: 20px;
+        }
+
+        @include md {
+            padding: 0 20px;
+            margin-top: 20px;
+        }
+
+        @include sm {
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        @include xs {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+    }
+
+    & .rv-28-author {
+        margin-top: 35px;
+
+        h6 {
+            font-family: var(--mulish);
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 0;
+
+            @include xs {
+                font-size: 16px;
+            }
+        }
+
+        & span {
+            color: $text-color-2;
+            font-size: 14px;
+
+            @include xs {
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+
+.rv-28-testimonial-controller {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    justify-content: center;
+
+    @include md {
+        margin-bottom: 50px;
+    }
+
+    @include sm {
+        margin-bottom: 0;
+    }
+
+    @include xs {
+        display: none;
+    }
+
+    & button {
+
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    & .swiper-pagination-fraction {
+        width: 10%;
+        text-align: center;
+        color: black;
+    }
+}
+
+.rv-28-clients {
+    @include sm {
+        display: none;
+    }
+}
+
+// rv-35-start up =======================
+
+.rv-35-testimonial {
+    @include md {
+        margin-bottom: 60px;
+    }
+}
+
+.rv-35-testimonial-container {
+
+    background-image: url(/assets/img/Software/testimonial/rv-35-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding: 80px 80px 60px 80px;
+    position: relative;
+
+    @include lg {
+        padding: 50px 50px 35px 50px;
+    }
+
+    @include md {
+        padding: 30px 30px 20px 30px;
+        margin-top: -15px;
+    }
+
+    @include xxs {
+        padding: 20px;
+    }
+}
+
+.rv-35-testimonial-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+    align-items: center;
+
+    @include lg {
+        gap: 50px;
+    }
+
+    @include md {
+        gap: 30px;
+    }
+
+    @include sm {
+        gap: 0;
+    }
+
+    &__img {
+        width: 310px;
+        background-color: #0080A8;
+
+        @include lg {
+            width: 250px;
+        }
+
+        @include md {
+            width: 180px;
+        }
+
+        @include sm {
+            display: none;
+        }
+
+        img {
+            @include lg {
+                max-width: 250px;
+            }
+
+            @include md {
+                max-width: 180px;
+            }
+        }
+    }
+}
+
+.rv-35-testimonial-item__content {
+
+    @include sm {
+        text-align: center;
+    }
+
+    &-text {
+        font-family: var(--mulish);
+        line-height: 36px;
+        color: #fff;
+        opacity: 0.7;
+
+        @include md {
+            line-height: 1.7;
+        }
+    }
+
+    &-person {
+        h6 {
+            font-family: var(--mulish);
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            line-height: 26px;
+            margin-bottom: 0;
+            margin-top: 25px;
+
+            @include sm {
+                font-size: 18px;
+            }
+
+            @include xxs {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        span {
+            font-family: var(--mulish);
+            line-height: 26px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 12px;
+            opacity: 0.6;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.rv-35-testimonial-controller {
+    position: absolute;
+    bottom: 100px !important;
+    text-align: right;
+    padding-right: 100px;
+
+    @include md {
+        bottom: 50px !important;
+        padding-right: 50px;
+    }
+
+    @include sm {
+        display: none;
+    }
+
+    span {
+        margin-right: 20px;
+    }
+
+    .swiper-pagination-bullet-active {
+        border-color: white;
+
+        &::before {
+            background-color: white;
+        }
+    }
+}
+
+// rv-36-digital-marketing =======================
+
+.rv-36-testimonial-img__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(236, 185, 29, 0.4);
+}
+
+.rv-36-testimonial-text__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.rv-36-testimonial-content {
+    position: absolute;
+    bottom: 0;
+    right: 300px;
+    background-color: $text-color-5;
+    padding: 80px 90px 50px 90px;
+    z-index: 10;
+    width: 830px;
+
+    &__text {
+        font-family: var(--mulish);
+        font-weight: 500;
+        font-size: 18px;
+        color: #7E7E7E;
+        line-height: 34px;
+
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    &__author {
+        display: flex;
+        margin-top: 40px;
+
+        &-name {
+            font-family: var(--mulish);
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            color: white;
+            margin-right: 8px;
+        }
+
+        &-star {
+            margin-left: 80px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 1px;
+                width: 45px;
+                left: -60px;
+                top: 15px;
+                background: white;
+            }
+        }
+
+        .rv-36-testimonial-content__customer-review {
+            font-family: var(--mulish);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 26px;
+            color: #7E7E7E;
+            text-decoration: underline;
+        }
+    }
+}
+
+.rv-36-testimonial-controller {
+    text-align: right;
+    position: relative;
+    top: 20px !important;
+
+    .swiper-pagination-bullet-active {
+        border-color: $rv-36-btnColor;
+
+        &::before {
+            background-color: $rv-36-btnColor;
+        }
+    }
+}
+
+// rv-37-software ================================
+
+.rv-37-testimonial {
+    @include md {
+        margin-top: 55px;
+        margin-bottom: 50px;
+    }
+
+    .rv-37-section-header-text {
+        @include md {
+            br {
+                display: none;
+            }
+        }
+
+        @include xs {
+            line-height: 24px;
+        }
+    }
+
+    .rv-33-testimonial-img {
+        img {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 4px;
+        }
+
+        @include md {
+            padding-bottom: 20px;
+        }
+    }
+
+    .rv-33-testimonial-img__vbtn {
+
+        color: $text-color-1;
+
+        @include xs {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .rv-37-testimonial-item {
+        background-color: #F0F2F4;
+        padding: 35px 20px 50px 25px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 4px;
+
+        @include sm {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,1384 @@
+// rv-31-app landing
+
+.rv-31-footer {
+    background-color: $text-color-1;
+
+    @include md {
+        margin-top: 30px;
+        padding-top: 60px;
+    }
+
+    .rv-31-footer-wized {
+        @include md {
+            padding-bottom: 20px;
+        }
+
+        @include xs {
+            text-align: center;
+        }
+    }
+
+    .col-6 {
+        @include xxs {
+            width: 100%;
+        }
+    }
+}
+
+
+.rv-31-footer-about {
+    a {
+        img {
+            @include xs {
+                max-width: 160px;
+            }
+
+            @include xxs {
+                max-width: 150px;
+            }
+        }
+    }
+
+    .rv-31-footer-text {
+        font-family: var(--inter);
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 20px;
+
+        br {
+            @include lg {
+                display: none;
+            }
+
+            @include md {
+                display: block;
+            }
+        }
+    }
+
+    .rv-31-footer-socials {
+        display: flex;
+        gap: 10px;
+        margin-top: 35px;
+
+        @include sm {
+            margin-top: 20px;
+        }
+
+        @include xs {
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        span {
+            height: 40px;
+            width: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            opacity: 0.7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: $purple;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.rv-31-footer-wized {
+    &__title {
+        font-family: var(--inter);
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 17px;
+        color: white;
+
+        @include lg {
+            font-size: 18px;
+        }
+    }
+
+    .footer-wized-ul {
+        margin-top: 45px;
+
+        @include md {
+            margin-top: 20px;
+        }
+
+        li {
+            margin-bottom: 25px;
+
+            @include xl {
+                margin-bottom: 20px;
+            }
+
+            @include sm {
+                margin-bottom: 15px;
+            }
+
+            a {
+                font-family: var(--inter);
+                font-size: 15px;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.7);
+
+                &:hover {
+                    color: $blue1;
+                }
+            }
+        }
+    }
+
+    .download-ios,
+    .download-android {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+
+        @include sm {
+            height: 45px;
+            font-size: 14px;
+        }
+
+        @include xs {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include xxs {
+            width: fit-content;
+            margin: 10px 5px;
+        }
+    }
+
+    .download-ios {
+        @include xxs {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .download-android {
+        margin-left: 0;
+
+        @include xs {
+            margin-left: auto;
+        }
+
+        @include xxs {
+            margin-right: auto;
+        }
+    }
+
+}
+
+.rv-31-footer-bottom {
+    font-family: var(--inter);
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+
+    a {
+        font-weight: 500;
+        color: white;
+    }
+
+    @include md {
+        margin-top: 15px;
+    }
+
+    @include sm {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 20px 15px;
+    }
+
+    @include xxs {
+        font-size: 14px;
+    }
+}
+
+// rv-32-seo ====================
+
+.rv-32-footer {
+
+    background-color: #021F2F;
+
+    @include md {
+        padding-top: 40px;
+        margin-top: 55px;
+    }
+
+    .rv-31-footer-about {
+
+        img {
+            @include xxs {
+                max-width: 150px;
+            }
+        }
+
+        @include md {
+            margin-top: 20px;
+        }
+
+        @include xs {
+            padding: 0 50px;
+        }
+
+        @include xxs {
+            padding: 0;
+        }
+
+    }
+
+    .rv-31-footer-wized {
+
+        @include xs {
+            text-align: center;
+        }
+
+        .rv-31-footer-text {
+            font-family: var(--mulish);
+            font-size: 16px;
+            font-weight: 500;
+
+            @include xxs {
+                font-size: 15px;
+            }
+
+        }
+
+        .rv-31-footer-socials {
+            span {
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: $btn-color-2;
+                }
+            }
+
+            @include md {
+                margin: 20px 0;
+            }
+        }
+
+        &__title {
+            font-family: var(--mulish);
+
+            @include md {
+                margin-top: 20px;
+            }
+
+        }
+
+
+        .footer-wized-ul {
+            margin-top: 40px;
+
+            @include md {
+                margin-top: 20px;
+            }
+
+            li {
+                margin-bottom: 20px;
+
+                @include md {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-family: var(--mulish);
+
+                    &:hover {
+                        color: $btn-color-2;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .rv-31-footer-bottom {
+        color: rgba(255, 255, 255, 0.7);
+
+        a {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        @include md {
+            margin-top: 45px;
+        }
+
+        @include xxs {
+            font-size: 14px;
+        }
+    }
+
+}
+
+.rv-32-footer-nwsltr__form {
+
+    @include xs {
+        padding: 0 50px;
+    }
+
+    @include xxs {
+        padding: 0;
+    }
+
+    .nwsltr-top {
+        margin-top: 40px;
+        padding-bottom: 0;
+        border: none;
+        display: flex;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.04);
+
+        @include md {
+            margin-top: 25px;
+        }
+
+        input {
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 6px 0 0 6px;
+            padding: 10px 22px;
+            width: 100%;
+            color: white;
+        }
+
+        button {
+            border-radius: 0 6px 6px 0;
+            background-color: $btn-color-2;
+            color: white;
+            width: 46px;
+            height: 46px;
+            flex-shrink: 0;
+        }
+    }
+
+    .rv-32-footer-nwsltr__checkbox {
+        padding-top: 20px;
+
+        input {
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-right: 0;
+            padding: 10px 22px;
+            background-color: transparent;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        label {
+            color: rgba(255, 255, 255, 0.7);
+
+            a {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+    }
+
+}
+
+// rv-33-security ==========================
+
+.rv-33-call-to-action {
+    background-color: #331AA5;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 50px;
+    background-image: url("/assets/img/Software/footer/rv-33-footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: -195px;
+    margin-top: 90px;
+
+    @include lg {
+        padding: 40px;
+    }
+
+    @include md {
+        padding: 25px;
+        margin-bottom: -148px;
+        margin-top: 30px;
+    }
+
+    @include xxs {
+        padding: 20px;
+    }
+
+    .rv-section-heading {
+        @include sm {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+
+    .rv-section-title {
+        font-size: 40px;
+        color: white;
+        margin-bottom: 0;
+
+        @include lg {
+            font-size: 34px;
+        }
+
+        @include md {
+            font-size: 28px;
+        }
+
+        @include sm {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        @include xs {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        @include xxs {
+            font-size: 20px;
+        }
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 450px;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 5px;
+        padding: 7px;
+        height: 60px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        @include md {
+            width: 50%;
+        }
+
+        @include sm {
+            width: 100%;
+            height: 45px;
+        }
+
+        input {
+            @include xxs {
+                font-size: 12px;
+            }
+        }
+
+        :-ms-input-placeholder,
+        ::-webkit-input-placeholder {
+            color: #878c8f;
+        }
+
+        .rv-33-btn {
+            padding: 0 30px;
+
+            @include sm {
+                height: 35px;
+            }
+
+            @include xs {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.rv-33-footer {
+    background-color: $rv-33-bg-color;
+    padding-top: 190px;
+
+    @include md {
+        padding-top: 95px;
+    }
+
+    .rv-31-footer-about {
+        .rv-31-footer-text {
+            color: $text-color-1;
+        }
+
+        .rv-31-footer-socials {
+
+            @include md {
+                margin-top: 15px;
+            }
+
+            @include sm {
+                justify-content: center;
+            }
+
+            a {
+                span {
+                    border: 1px solid $border-color-2;
+                    color: $text-color-1;
+
+                    &:hover {
+                        background-color: $rv-33-btn-color;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .rv-31-footer-wized {
+
+        @include md {
+            margin-bottom: 30px;
+        }
+
+        @include sm {
+            text-align: center;
+        }
+
+        &__title {
+            color: $text-color-1;
+        }
+
+        .footer-wized-ul {
+            @include lg {
+                margin-top: 30px;
+            }
+
+            @include md {
+                margin-top: 15px;
+            }
+
+            @include xs {
+                text-align: center;
+            }
+
+            li {
+                @include lg {
+                    margin-bottom: 15px;
+                }
+
+                a {
+                    color: $text-color-1;
+
+                    &:hover {
+                        color: $rv-33-btn-color;
+                    }
+                }
+            }
+
+            .download-ios,
+            .download-android {
+
+                @include sm {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                @include xs {
+                    display: block;
+                    width: fit-content;
+
+                }
+            }
+
+            .download-android {
+                margin-left: 0;
+
+                @include sm {
+                    margin-left: auto;
+                }
+            }
+
+
+            .rv-33-store-btn {
+                border-radius: 5px;
+                background-color: transparent;
+                border: 1px solid $border-color-2;
+                color: $text-color-1;
+
+                &:hover {
+                    background-color: $rv-33-btn-color;
+                }
+
+            }
+
+
+        }
+
+    }
+}
+
+.rv-33-footer-bottom {
+    color: $text-color-1;
+    border-top: 1px solid $border-color-2;
+
+    a {
+        color: $text-color-1;
+    }
+
+    @include md {
+        margin-top: 20px;
+    }
+
+    @include xxs {
+
+        font-size: 13px;
+    }
+
+}
+
+// rv-34-it service ===============
+
+.rv-34-footer {
+    background-color: white;
+
+    @include md {
+        margin-top: 70px;
+    }
+
+    .rv-31-footer-about {
+        margin-top: -10px;
+    }
+
+    .rv-31-footer-wized {
+
+        @include md {
+            margin-bottom: 30px;
+        }
+
+        @include sm {
+            text-align: center;
+        }
+
+
+        .rv-31-footer-text {
+            font-family: var(--mulish);
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(10, 37, 64, 0.9);
+
+            @include xxs {
+                font-size: 15px;
+            }
+        }
+
+        .rv-31-footer-socials {
+
+            @include md {
+                margin-top: 20px;
+            }
+
+            @include sm {
+                justify-content: center;
+            }
+
+            span {
+                border-radius: 50%;
+                background-color: #f0f2f4;
+                color: rgba(5, 5, 5, 0.35);
+                border: none;
+
+                &:hover {
+                    background-color: $rv-34-color-1;
+                    color: black;
+                }
+            }
+        }
+
+        &__title {
+            font-family: var(--roboto);
+            font-weight: bold;
+            font-size: 20px;
+            color: $text-color-1;
+
+            @include sm {
+                font-size: 18px;
+            }
+
+            @include xs {
+                font-size: 17px;
+            }
+        }
+
+        .footer-wized-ul {
+            margin-top: 40px;
+
+            @include lg {
+                margin-top: 25px;
+            }
+
+            li {
+                margin-bottom: 18px;
+
+                @include lg {
+                    margin-bottom: 12px;
+                }
+
+                @include md {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-family: var(--mulish);
+                    color: rgba(10, 37, 64, 0.9);
+
+                    &:hover {
+                        color: $rv-34-color-1;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.rv-34-footer-newsletter {
+    .nwsltr-top {
+
+        background: #f0f2f4;
+        border-radius: 0;
+        height: 50px;
+
+        @include lg {
+            margin-top: 30px;
+        }
+
+        @include xxs {
+            height: 40px;
+        }
+
+        input {
+            color: black;
+        }
+
+        button {
+            border-radius: 0;
+            background-color: $rv-34-color-1;
+            color: black;
+            width: auto;
+            height: 40px;
+            margin: 5px;
+            padding: 0 15px;
+
+            @include xxs {
+                height: auto;
+                padding: 0 10px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .rv-32-footer-nwsltr__checkbox {
+        padding-top: 20px;
+
+        label {
+            color: rgba(10, 37, 64, 0.9);
+
+            a {
+                color: rgba(10, 37, 64, 0.9);
+            }
+        }
+
+    }
+}
+
+.rv-34-footer-bottom {
+    font-family: var(--inter);
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(10, 37, 64, 0.8);
+    background-color: #f0f2f4;
+    text-align: center;
+    padding: 20px;
+
+    @include md {
+        margin-top: 25px;
+    }
+
+    @include sm {
+        font-size: 14px;
+    }
+
+    a {
+        color: rgba(10, 37, 64, 0.8);
+    }
+}
+
+// rv-35-start up ==================
+
+.rv-35-call-to-action {
+    background-color: $rv-35-btnColor;
+    border-radius: 0;
+    z-index: 5;
+
+    form {
+        border-radius: 0;
+
+        .rv-33-btn {
+            background-color: $rv-35-btnColor;
+            color: white;
+            border-radius: 0;
+        }
+    }
+}
+
+.rv-35-footer {
+
+    background-image: url(/assets/img/Software/footer/rv-35-footer-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    @include md {
+        margin-top: 85px;
+    }
+
+}
+
+
+
+.rv-35-footer-content {
+    margin-top: 190px;
+
+    @include md {
+        margin-top: 120px;
+    }
+
+    @include sm {
+        text-align: center;
+    }
+
+    .rv-31-footer-about {
+        .rv-31-footer-text {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .rv-31-footer-socials {
+
+            @include md {
+                margin-top: 10px;
+            }
+
+            @include sm {
+                justify-content: center;
+            }
+
+            span {
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                color: rgba(255, 255, 255, 0.6);
+
+                &:hover {
+                    background-color: $rv-35-btnColor;
+                    color: white;
+
+                }
+            }
+        }
+    }
+
+    .rv-31-footer-wized {
+        &__title {
+            color: white;
+        }
+
+        .footer-wized-ul {
+            li {
+                @include md {
+                    margin-bottom: 12px;
+                }
+
+                @include sm {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    color: rgba(255, 255, 255, 0.6);
+
+                    &:hover {
+                        color: $rv-35-btnColor;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .rv-32-footer-nwsltr__form {
+
+        @include xs {
+            padding: 0 25px;
+        }
+
+        @include xxs {
+            padding: 0;
+        }
+
+        .nwsltr-top {
+
+            border-radius: 0px;
+            background: transparent;
+            padding-left: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+
+            @include md {
+                margin-top: 10px;
+            }
+
+            @include sm {
+                width: 80%;
+                margin: auto;
+            }
+
+            @include xs {
+                width: 100%;
+            }
+
+            input {
+                border: none;
+                border-radius: 0;
+                color: white;
+                padding: 10px;
+
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.6);
+                    opacity: 1;
+                    /* Firefox */
+                }
+
+                &::-ms-input-placeholder {
+                    /* Edge 12 -18 */
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+
+            .rv-35-send-btn {
+                border: none;
+                background-color: transparent;
+                color: white;
+                font-weight: 600;
+
+                i {
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+
+                span {
+                    @include xxs {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .rv-32-footer-nwsltr__checkbox {
+            padding-top: 20px;
+
+            input {
+                border: 1px solid rgba(255, 255, 255, 0.16);
+                border-right: 0;
+                padding: 10px 22px;
+                background-color: transparent;
+                width: auto;
+                margin-right: 10px;
+            }
+
+            label {
+                color: rgba(255, 255, 255, 0.6);
+
+                a {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+
+        }
+
+    }
+}
+
+.rv-35-footer-bottom-border {
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    margin-top: 75px;
+
+    @include md {
+        margin-top: 40px;
+    }
+}
+
+.rv-35-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    @include sm {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @include xs {
+        padding: 20px 0;
+    }
+
+    span {
+        color: rgba(255, 255, 255, 0.6);
+
+        a {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+
+
+// rv-36-digital marketing =================
+
+.rv-36-footer {
+    background-color: $text-color-5;
+
+    @include md {
+        padding-top: 50px;
+    }
+
+    .rv-31-footer-about {
+        margin-top: -8px;
+
+        @include lg {
+            padding-right: 0;
+        }
+    }
+
+    .rv-31-footer-wized {
+        @include sm {
+            text-align: center;
+        }
+
+        .rv-31-footer-text {
+            font-family: var(--inter);
+            font-size: 15px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.6);
+
+            br {
+                display: none;
+
+                @include sm {
+                    display: block;
+                }
+
+                @include xxs {
+                    display: none;
+                }
+
+            }
+
+        }
+
+        .rv-31-footer-socials {
+
+            @include md {
+                margin-top: 18px;
+            }
+
+            @include sm {
+                justify-content: center;
+            }
+
+            span {
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: rgba(255, 255, 255, 0.3);
+
+                &:hover {
+                    background-color: $rv-36-btnColor;
+                    color: white;
+                }
+            }
+        }
+
+        &__title {
+            color: white;
+        }
+
+        .footer-wized-ul {
+            margin-top: 40px;
+
+            @include md {
+                margin-top: 20px;
+            }
+
+            li {
+                margin-bottom: 18px;
+
+                @include md {
+                    margin-bottom: 8px;
+                }
+
+                a {
+                    font-family: var(--inter);
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: rgba(255, 255, 255, 0.6);
+
+                    &:hover {
+                        color: $rv-36-btnColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .rv-36-newsletter__text {
+        font-family: var(--inter);
+        font-weight: 500;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 40px;
+
+        @include md {
+            margin-top: 18px;
+        }
+    }
+
+    .rv-34-footer-newsletter {
+        .nwsltr-top {
+
+            background: rgba(255, 255, 255, 0.1);
+            margin-top: 20px;
+
+            input {
+                border: none;
+                color: white;
+            }
+
+            button {
+
+                background-color: $rv-36-btnColor;
+                color: white;
+            }
+        }
+
+        .rv-32-footer-nwsltr__checkbox {
+            padding-top: 20px;
+
+            input {
+                background: transparent;
+            }
+
+            label {
+                color: rgba(255, 255, 255, 0.6);
+
+                a {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+
+        }
+    }
+
+}
+
+.rv-36-footer-bottom {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    opacity: 0.5;
+
+    a {
+        color: $rv-36-btnColor;
+    }
+
+    @include md {
+        margin-top: 45px;
+    }
+}
+
+// rv-37-Software =============================
+
+.rv-37-footer {
+    background-color: white;
+    margin-top: 100px;
+
+
+    @include md {
+        margin-top: 60px;
+    }
+
+    @include xs {
+        .pr-100 {
+            padding: 0 20px;
+        }
+    }
+
+    .pr-100 {
+        @include lg {
+            padding-right: 0;
+        }
+    }
+
+    .rv-31-footer-wized {
+
+
+        @include xs {
+            text-align: center;
+        }
+
+        .rv-31-footer-text {
+            font-family: var(--inter);
+            font-weight: 500;
+            font-size: 15px;
+            color: $text-color-2;
+            line-height: 26px;
+
+
+            @include xl {
+
+                br {
+                    display: none;
+                }
+            }
+
+            @include xxs {
+                font-size: 14px;
+            }
+        }
+
+        .rv-31-footer-socials {
+            @include xs {
+                justify-content: center;
+                margin-top: 25px;
+            }
+
+            span {
+
+                &:hover {
+                    background-color: $rv-37-btnColor;
+                    color: white;
+                }
+            }
+        }
+
+        .footer-wized-ul {
+            @include sm {
+                margin-top: 25px;
+            }
+
+            li {
+                @include md {
+                    margin-bottom: 12px;
+                }
+
+                @include sm {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-family: var(--inter);
+                    font-size: 15px;
+                    color: $text-color-2;
+
+                    @include xxs {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        color: $rv-37-btnColor;
+                    }
+                }
+            }
+        }
+
+        .rv-36-newsletter__text {
+            font-family: var(--inter);
+            font-weight: 500;
+            font-size: 15px;
+            color: $text-color-2;
+            margin-top: 40px;
+
+            @include md {
+                margin-top: 20px;
+            }
+
+            @include sm {
+                margin-top: 25px;
+            }
+
+            @include xxs {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .rv-34-footer-newsletter {
+
+        @include xs {
+            padding: 0 20px;
+        }
+
+        .nwsltr-top {
+            border-radius: 8px;
+            margin-top: 20px;
+
+
+
+            button {
+                background-color: $rv-37-btnColor;
+                color: white;
+                border-radius: 8px;
+            }
+        }
+
+        .rv-32-footer-nwsltr__checkbox {
+
+            label {
+                color: $text-color-2;
+                font-size: 15px;
+                font-weight: 500;
+                font-family: var(--inter);
+
+                @include xxs {
+                    font-size: 14px;
+                }
+
+                a {
+                    color: $text-color-2;
+                }
+            }
+
+        }
+    }
+
+    .rv-34-footer-bottom {
+        color: $text-color-2;
+
+        @include md {
+            margin-top: 22px;
+        }
+    }
+
+    ::placeholder {
+        color: $text-color-2;
+        font-weight: 500;
+        opacity: 0.7;
+        /* Firefox */
+    }
+
+    ::-ms-input-placeholder {
+        /* Edge 12 -18 */
+        color: red;
+    }
+
+}

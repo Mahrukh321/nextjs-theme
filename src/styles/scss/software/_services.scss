@@ -1,0 +1,1016 @@
+// rv-31-service ====================
+
+.rv-31-service {
+    background-color: $bacground1;
+    padding-bottom: 120px;
+    position: relative;
+
+    @include md {
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+
+    .rv-31-service-star {
+        position: absolute;
+        right: 0;
+        top: 80px;
+
+        @include sm {
+            display: none;
+        }
+    }
+
+    .col-md-6 {
+        @include md {
+            margin-bottom: 20px;
+        }
+    }
+
+    .row.pt-60 {
+        @include sm {
+            padding-top: 40px;
+        }
+    }
+}
+
+.rv-section-heading {
+
+    .rv-31-sec-title {
+        @include rv-31-sec-title;
+
+        & img {
+            position: absolute;
+            bottom: 0;
+            right: 34%;
+
+            @include md {
+                bottom: -2px;
+            }
+        }
+    }
+
+    .rv-31-sec-subtitle {
+        color: $text-color-2;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+
+        @include sm {
+            font-size: 15px;
+            line-height: 22px;
+
+            br {
+                display: none;
+            }
+        }
+
+    }
+}
+
+.rv-31-service-item {
+    background-color: white;
+    border-radius: 7px;
+    padding: 40px;
+    transition: 0.3s all;
+    border-bottom: 2px solid transparent;
+
+    @include xl {
+        padding: 35px;
+    }
+
+    @include lg {
+        padding: 24px;
+    }
+
+    @include sm {
+        text-align: center;
+    }
+
+    a {
+        display: block;
+    }
+
+    &__title {
+        font-family: var(--inter);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        margin-top: 30px;
+        transition: 0.3s all;
+
+        &:hover {
+            color: $blue1;
+        }
+
+        @include lg {
+            font-size: 17px;
+        }
+    }
+
+    &__text {
+        font-family: var(--inter);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22px;
+        margin-top: -5px;
+
+    }
+
+    &__readMore {
+        color: $text-color-1;
+        font-weight: bold;
+        margin-top: 20px;
+        display: inline-block;
+
+        @include lg {
+            font-size: 16px;
+        }
+
+        &:hover {
+            color: $blue1;
+        }
+    }
+
+    &:hover {
+        border-bottom: 2px solid $border-color-1;
+        border-radius: 0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+}
+
+// rv-32- seo =============================
+
+.rv-32-service {
+    @include md {
+        margin-top: 70px;
+    }
+}
+
+.rv-32-section-heading {
+    .rv-32-sec-title {
+        @include rv-32-sec-title;
+
+        img {
+            position: absolute;
+            top: 45px;
+            right: 430px;
+
+            @include xl {
+                right: 360px;
+            }
+
+            @include lg {
+                right: 305px;
+                top: 33px;
+            }
+
+            @include md {
+                right: 190px;
+            }
+
+            @include sm {
+                right: 100px;
+            }
+
+            @include xs {
+                display: none;
+            }
+
+        }
+
+
+    }
+}
+
+.rv-32-service-item {
+    border: 1px solid $border-color-3;
+    padding: 50px 44px;
+    margin-bottom: 24px;
+    border-radius: 15px;
+
+    @include lg {
+        padding: 35px;
+    }
+
+    @include sm {
+        text-align: center;
+    }
+
+    @include xxs {
+        padding: 25px;
+    }
+
+
+    &__title {
+        font-weight: bold;
+        font-size: 22px;
+        color: $text-color-5;
+        margin-top: 30px;
+        margin-bottom: 12px;
+        transition: 0.3s all;
+
+        &:hover {
+            color: $btn-color-2;
+        }
+
+        @include xl {
+            font-size: 20px;
+        }
+
+        @include lg {
+            font-size: 18px;
+        }
+    }
+
+    &__text {
+        font-family: var(--mulish);
+
+        @include xxs {
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+
+    &:hover {
+        .rv-32-service-btn {
+            background-color: $btn-color-2 ;
+            color: white;
+        }
+    }
+
+    .rv-32-service-btn {
+        @include sm {
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+}
+
+.rv-32-service-btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid $border-color-3;
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+    width: fit-content;
+}
+
+// rv-33-security =====================
+
+.rv-33-service {
+    @include md {
+        margin-top: 55px;
+    }
+}
+
+.rv-section-title {
+    font-family: var(--inter);
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    color: $text-color-1;
+
+    @include xl {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    @include lg {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    @include md {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    @include sm {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    @include xs {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    @include xxs {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
+
+.rv-28-service-item {
+    border: 1px solid black;
+    display: flex;
+    padding: 30px;
+    background-color: white;
+    margin-bottom: 30px;
+    border: 1px solid $border-color-2;
+    border-radius: 5px;
+    transition: all 0.3s linear 0s;
+
+    &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border: 1px solid transparent;
+    }
+
+    @include md {
+        padding: 20px;
+    }
+
+    @include xxs {
+        padding: 15px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__icon {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: #fbf1ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #B13FE8;
+        font-size: 25px;
+
+        @include md {
+            height: 55px;
+            width: 55px;
+        }
+
+        @include xxs {
+            margin: auto;
+            margin-bottom: 10px;
+        }
+    }
+
+    & .rv-28-sr-item-2 {
+        background-color: #ffeeee;
+        color: #DB6D6D;
+    }
+
+    & .rv-28-sr-item-3 {
+        background-color: #ebf5ff;
+        color: #1D79CD;
+    }
+
+    & .rv-28-sr-item-4 {
+        background-color: #fff3e9;
+        color: #C7752D;
+    }
+
+    & .rv-28-sr-item-5 {
+        background-color: #e9fdf0;
+        color: #12A544;
+    }
+
+    & .rv-28-sr-item-6 {
+        background-color: #f5f1ff;
+        color: #633CCF;
+    }
+
+    &__content {
+        margin-left: 20px;
+
+        @include xxs {
+            margin-left: 10px;
+        }
+
+        &-title {
+            font-family: var(--inter);
+            font-weight: bold;
+            font-size: 18px;
+            color: $text-color-1;
+            margin-bottom: 8px;
+            text-transform: capitalize;
+            transition: 0.3s all;
+
+            @include md {
+                font-size: 17px;
+            }
+
+            @include sm {
+                font-size: 16px;
+            }
+
+
+            &:hover {
+                color: $rv-33-btn-color;
+            }
+
+        }
+
+        &-text {
+            font-family: var(--inter);
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 15px;
+
+            @include xxs {
+                line-height: 22px;
+            }
+        }
+
+    }
+
+}
+
+.rv-33-readMore {
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-color-1;
+
+    @include sm {
+        font-size: 14px;
+    }
+
+
+    i {
+        font-weight: bold;
+    }
+
+    &:hover {
+        color: $rv-33-btn-color;
+    }
+}
+
+// rv-34-it service ==========================
+
+.rv-34-service {
+    @include md {
+        margin-top: 60px;
+    }
+}
+
+.rv-34-section-title {
+    font-family: var(--mulish);
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    color: $text-color-5;
+
+    @include xl {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    @include lg {
+        font-size: 36px;
+    }
+
+    @include md {
+        font-size: 32px;
+    }
+
+    @include sm {
+        font-size: 28px;
+    }
+
+    @include xs {
+        font-size: 25px;
+    }
+
+    @include xxs {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+}
+
+.rv-34-service-item {
+    padding: 50px;
+    border-radius: 0;
+    position: relative;
+
+    @include xl {
+        padding: 40px;
+    }
+
+    @include lg {
+        padding: 30px;
+    }
+
+    @include xxs {
+        padding: 20px;
+    }
+
+    .rv-32-service-item__title {
+        margin-top: 25px;
+        font-family: var(--mulish);
+        font-size: 20px;
+        font-weight: 800;
+
+        &:hover {
+            color: black;
+        }
+
+        @include lg {
+            font-size: 18px;
+        }
+
+        @include md {
+            margin-top: 25px;
+        }
+
+        @include xxs {
+            font-size: 17px;
+        }
+    }
+
+    .rv-32-service-item__text {
+        @include lg {
+            line-height: 24px;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 18px;
+        background-color: $rv-34-color-1;
+        padding: 30px 40px;
+        transform: scale(0);
+        transition: 0.3s all;
+
+        @include xl {
+            padding: 25px 30px;
+        }
+
+        @include md {
+            padding: 18px 30px;
+        }
+
+        @include xxs {
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .rv-32-service-item__text {
+            color: black;
+        }
+
+        .rv-31-blog-item__content-readMore {
+            &:hover {
+                color: black;
+            }
+        }
+    }
+
+    &:hover {
+        .rv-34-service-item__overlay {
+            transform: scale(1);
+        }
+
+    }
+}
+
+// rv-35-start up ===============
+
+.rv-35-service {
+    background-color: $bacground3;
+
+    @include md {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.rv-35-section-title {
+    &__text {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 50px;
+        color: $text-color-5;
+
+        @include xl {
+            font-size: 40px;
+            line-height: 1.1;
+        }
+
+        @include lg {
+            font-size: 34px;
+        }
+
+        @include md {
+            font-size: 30px;
+        }
+
+        @include sm {
+            font-size: 28px;
+        }
+
+        @include xs {
+            font-size: 25px;
+        }
+
+        @include xxs {
+            font-size: 22px;
+        }
+    }
+}
+
+.rv-35-service-item {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 70px 50px;
+    text-align: center;
+
+
+    @include xl {
+        padding: 50px 35px;
+    }
+
+    @include xl {
+        padding: 30px;
+    }
+
+    @include xxxs {
+        padding: 20px;
+    }
+
+    &__icon {
+        height: 80px;
+        width: 80px;
+        background: linear-gradient(to right bottom, rgba(0, 87, 252, 0.2), rgba(0, 87, 252, 0));
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        img {
+            @include xxs {
+                max-width: 42px;
+            }
+        }
+
+        @include xxs {
+            height: 60px;
+            width: 60px;
+        }
+
+
+    }
+
+    .rv-35-service-item__title {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        color: $text-color-5;
+        margin-top: 45px;
+        text-transform: uppercase;
+        transition: 0.3s all;
+
+        &:hover {
+            color: $rv-35-btnColor;
+        }
+
+
+        @include xl {
+            font-size: 20px;
+        }
+
+        @include lg {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        @include sm {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__text {
+        color: rgba(5, 5, 5, 0.5);
+        font-family: var(--mulish);
+        font-weight: 500;
+        font-size: 16px;
+
+    }
+
+    &__circle {
+        font-size: 7px;
+        color: rgba(5, 5, 5, 0.3);
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 35px;
+    }
+
+    &:hover {
+        .rv-35-service-item__circle {
+            color: $rv-35-btnColor;
+        }
+    }
+}
+
+// rv-36-digital marketing ===============
+.rv-36-service {
+
+    @include md {
+        padding-top: 35px;
+        padding-bottom: 60px;
+    }
+
+    .rv-36-section-title {
+        padding-left: 340px;
+
+        @include md {
+            padding-left: 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .rv-36-tag {
+            @include md {
+                margin: auto;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.rv-36-section-title__text {
+    font-family: var(--inter);
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 62px;
+    color: $text-color-5;
+    margin-top: 0;
+
+    @include xl {
+        font-size: 35px;
+        line-height: 1.1;
+    }
+
+    @include lg {
+        font-size: 32px;
+    }
+
+    @include md {
+        font-size: 30px;
+    }
+
+    @include sm {
+        font-size: 28px;
+    }
+
+    @include xs {
+        font-size: 25px;
+    }
+
+    @include xxs {
+        font-size: 23px;
+    }
+}
+
+.rv-36-service-item {
+    border: 1px solid rgba(5, 5, 5, 0.1);
+    box-shadow: none;
+    text-align: left;
+    padding: 50px 32px;
+
+    @include xl {
+        padding: 30px 25px;
+    }
+
+    @include lg {
+        padding: 25px;
+    }
+
+    .rv-35-service-item__icon {
+        background: linear-gradient(to right bottom, rgba(251, 62, 45, 0.14), rgba(251, 62, 45, 0));
+        margin: 0;
+
+        @include lg {
+            height: 60px;
+            width: 60px;
+        }
+
+        img {
+            @include lg {
+                max-width: 35px;
+            }
+        }
+    }
+
+    .rv-35-service-item__title {
+        font-size: 20px;
+        font-family: var(--inter);
+        text-transform: capitalize;
+        margin-top: 35px;
+        margin-bottom: 10px;
+
+        @include xl {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        @include lg {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        &:hover {
+            color: $rv-36-btnColor;
+        }
+    }
+
+    .rv-35-service-item__text {
+        font-family: var(--mulish);
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .rv-31-blog-item__content-readMore {
+
+        &:hover {
+            color: $rv-36-btnColor;
+        }
+    }
+
+}
+
+.container-fluid {
+    padding: 0 160px;
+
+    @include xxxl {
+        padding: 0 100px;
+    }
+
+    @include xxl {
+        padding: 0 70px;
+    }
+
+    @include xl {
+        padding: 0 50px;
+    }
+
+    @include lg {
+        padding: 0 35px;
+    }
+
+    @include md {
+        padding: 0 25px;
+    }
+
+    @include sm {
+        padding: 0 20px;
+    }
+
+
+    .rv-36-service-img {
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 55px;
+            z-index: -2;
+
+            @include md {
+                top: 45px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            @include sm {
+                top: 115px;
+            }
+        }
+    }
+}
+
+
+// rv-37-software ======================
+.rv-37-service {
+    @include md {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .col-lg-6 {
+        @include lg {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.rv-37-section-title {
+    font-family: var(--inter);
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 48px;
+    color: $text-color-1;
+
+    @include xl {
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+    @include lg {
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    @include md {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    @include sm {
+        font-size: 27px;
+        line-height: 28px;
+    }
+
+    @include xs {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    @include xxs {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
+
+.rv-37-service-item {
+    border: 1px solid $border-color-2;
+    padding: 60px 43px 55px 30px;
+    border-radius: 8px;
+    height: 80%;
+    overflow: hidden;
+    transition: 0.3s all;
+
+    @include sm {
+        padding: 50px 43px 50px 30px;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: var(--inter);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: $text-color-1;
+        margin-top: 40px;
+
+        @include sm {
+            font-size: 17px;
+            margin-top: 30px;
+        }
+
+        @include xs {
+            font-size: 18px;
+        }
+    }
+
+    &__text {
+        font-family: var(--inter);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(10, 37, 64, 0.7);
+        margin-bottom: 0;
+
+        @include xs {
+            font-size: 15px;
+        }
+    }
+
+    &__more {
+        font-family: var(--robota);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 13px;
+        color: $text-color-1;
+        margin-top: 40px;
+        position: relative;
+
+        &:hover {
+            color: $rv-37-btnColor;
+        }
+
+        @include xs {
+            font-size: 15px;
+        }
+    }
+
+    &:hover {
+        height: 100%;
+        background-color: rgba(10, 37, 64, 0.06);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 1px;
+
+    }
+
+}

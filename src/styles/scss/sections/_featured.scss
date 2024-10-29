@@ -1,0 +1,200 @@
+// INDEX-16 FEATURED
+.rv-16-featured_main_area {
+    background: #E6E6F5;
+
+    .featured_image {
+        position: relative;
+        z-index: 1;
+
+        img {
+            height: 700px;
+            width: 100%;
+            object-fit: cover;
+
+            @media #{$xl,$lg,$md,$sm,$mobile,$sm-mobile} {
+                height: 550px;
+            }
+
+            @media #{$md,$sm,$mobile,$sm-mobile} {
+                height: 480px;
+            }
+
+            @media #{$sm,$mobile,$sm-mobile} {
+                height: 370px;
+            }
+
+            @media #{$mobile,$sm-mobile} {
+                height: 320px;
+            }
+
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.7;
+            background: #020208;
+        }
+
+        .video_btn {
+            @include play_btn;
+            background-color: #A8AA04;
+            z-index: 1;
+            color: #080202;
+            font-family: $mulish;
+
+            &:hover {
+                background: #080202;
+                color: #A8AA04;
+            }
+
+        }
+
+    }
+
+    .featured_content {
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        padding: 130px 0;
+        padding-left: 70px;
+
+        @media #{$xl,$lg,$md,$sm,$mobile,$sm-mobile} {
+            padding: 55px 0;
+            padding-left: 20px;
+        }
+
+        @media #{$md} {
+            padding: 18px 0;
+            padding-left: 0;
+        }
+
+        @media #{$mobile,$sm-mobile} {
+            padding: 30px 15px;
+
+        }
+
+
+        .rv-16-featured_title {
+            color: #020208;
+            font-size: 44px;
+            font-weight: 800;
+            max-width: 600px;
+            margin-bottom: 30px;
+            font-family: $mulish;
+
+            @media #{$xl,$lg,$md,$sm,$mobile,$sm-mobile} {
+                font-size: 35px;
+            }
+
+            @media #{$md,$sm,$mobile,$sm-mobile} {
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            @media #{$mobile,$sm-mobile} {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+
+            @media #{$sm-mobile} {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .rv-16-featured_desc {
+            color: #696969;
+            max-width: 600px;
+            margin-bottom: 30px;
+            font-family: $mulish;
+
+            @media #{$sm-mobile} {
+                font-size: 14px;
+
+            }
+        }
+
+        .rv-16-featured_meta_area {
+            display: flex;
+            gap: 40px;
+            padding-bottom: 40px;
+
+            @media #{$md,$sm,$mobile,$sm-mobile} {
+                padding-bottom: 30px;
+            }
+
+            @media #{$mobile,$sm-mobile} {
+                padding-bottom: 10px;
+            }
+
+            .rv-16-featured_meta {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                font-family: $mulish;
+
+                @media #{$sm-mobile} {
+                    gap: 10px;
+                }
+
+                .rv-16-featured_meta_icon {
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        object-fit: contain;
+                    }
+                }
+
+                .rv-16-featured_meta_txt {
+
+                    .rv-16-featured_meta_txt_title {
+                        font-weight: 900;
+                        font-family: $mulish;
+                        color: #1a1a1a;
+
+                        h3 {
+                            font-size: 30px;
+                            margin: 0;
+                            font-weight: 900;
+                            font-family: $mulish;
+                            display: inline-block;
+
+                            @media #{$md,$sm,$mobile,$sm-mobile} {
+                                font-size: 25px;
+                            }
+                        }
+
+                        sub {
+                            font-size: 18px;
+                            margin-left: 7px;
+                        }
+                    }
+
+                    p {
+                        color: #696969;
+                    }
+                }
+            }
+
+        }
+
+        .rv-16-featured_btn {
+            @include rv_btn;
+            color: #020208;
+            font-family: $mulish;
+            border: 1px solid #696969;
+
+            @media #{$md,$sm,$mobile,$sm-mobile} {
+                padding: 7px 15px;
+                font-size: 15px;
+            }
+        }
+    }
+}

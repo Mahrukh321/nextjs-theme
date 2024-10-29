@@ -1,0 +1,321 @@
+//rv-32-seo =============
+
+.rv-32-team {
+    @include md {
+        padding-top: 70px;
+    }
+
+    .rv-32-section-heading {
+
+        .rv-32-sec-title {
+            @include xxs {
+                br {
+                    display: none;
+                }
+            }
+
+            img {
+                right: 520px;
+
+                @include xl {
+                    right: 420px;
+                }
+
+                @include lg {
+                    right: 340px;
+                }
+
+                @include md {
+                    right: 225px;
+                }
+
+                @include sm {
+                    right: 140px;
+                }
+
+                @include xs {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .rv-32-team-slider {
+        @include sm {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.rv-32-team-member {
+    a {
+        background-color: $btn-color-2;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.rv-32-team__title {
+    @include lg {
+        margin-bottom: 5px;
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover {
+            color: $btn-color-2;
+        }
+    }
+}
+
+.rv-32-team-controller {
+    text-align: center;
+
+    @include sm {
+        display: none;
+    }
+
+    .swiper-pagination-bullet-active {
+        border-color: $btn-color-2;
+
+        &::before {
+            background-color: $btn-color-2;
+        }
+    }
+
+}
+
+// rv-34- it service ==========================
+
+.rv-34-team {
+
+    @include md {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .rv-34-section-heading {
+
+        .rv-34-view-link {
+
+            &:hover {
+                color: $rv-34-color-1;
+            }
+        }
+
+        @include sm {
+            display: grid;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+}
+
+.rv-34-view-link {
+    color: #020208;
+
+}
+
+.rv-34-section-heading {
+    .rv-31-blog-item__content-readMore {
+        text-decoration: underline;
+    }
+}
+
+
+.rv-34-team-member {
+    position: relative;
+    transition: 0.3s all;
+    overflow: hidden;
+
+    .rv-34-team-member__img {
+        overflow: hidden;
+
+    }
+
+    &__overlay {
+        background-color: rgba(255, 170, 23, 0.66);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 14px;
+        bottom: 14px;
+        right: 14px;
+        height: 92px;
+        padding: 25px 34px;
+        transform: translateY(120px);
+        transition: 0.3s all;
+
+        @include lg {
+            padding: 20px 12px;
+            height: 75px;
+        }
+
+        @include sm {
+            padding: 15px 10px;
+            height: 60px;
+            bottom: 10px;
+            right: 8px;
+            left: 8px;
+        }
+
+        .rv-34-team-member__info-name {
+            font-family: var(--mulish);
+            font-weight: 800;
+            font-size: 18px;
+            color: $text-color-5;
+            margin-bottom: 0;
+
+            @include lg {
+                font-size: 16px;
+            }
+        }
+
+        .rv-34-team-member__info-title {
+            font-family: var(--mulish);
+            font-weight: 600;
+            font-size: 14px;
+            color: $text-color-5;
+            text-transform: uppercase;
+
+            @include lg {
+                font-size: 13px;
+            }
+
+            @include sm {
+                font-size: 12px;
+            }
+        }
+
+        .rv-34-team-member__socials {
+            display: flex;
+            gap: 20px;
+            align-self: flex-end;
+
+            @include lg {
+                gap: 15px;
+            }
+
+
+            a {
+                i {
+                    color: rgba(5, 5, 5, 0.3);
+                }
+
+                &:hover {
+                    i {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .rv-34-team-member__img {
+            img {
+                transform: scale(1.2);
+            }
+        }
+
+        .rv-34-team-member__overlay {
+            transform: translateY(0);
+        }
+    }
+}
+
+// rv-36-digital marketing ===============
+
+.rv-36-team {
+
+    @include md {
+        margin-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .rv-36-section-title {
+        @include md {
+            margin-bottom: 20px;
+        }
+    }
+
+    .rv-36-tag {
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+
+.rv-36-team-member {
+    &__img {
+        overflow: hidden;
+
+        a {
+            display: block;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 16px;
+
+        span {
+            font-family: var(--inter);
+            font-size: 14px;
+            font-weight: 500;
+            color: $text-color-5;
+            opacity: 0.7;
+        }
+
+        .rv-36-team-member__name {
+            font-family: var(--inter);
+            font-size: 20px;
+            font-weight: 700;
+            color: $text-color-5;
+            transition: 0.3s all;
+
+            &:hover {
+                color: $rv-36-btnColor;
+            }
+
+            @include sm {
+                font-size: 18px;
+            }
+
+            @include xxs {
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.rv-36-team-controller {
+
+    @include sm {
+        display: none;
+    }
+
+    .swiper-pagination-bullet-active {
+        border-color: $rv-36-btnColor;
+
+        &::before {
+            background-color: $rv-36-btnColor;
+        }
+    }
+}

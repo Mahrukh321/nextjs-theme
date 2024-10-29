@@ -1,0 +1,136 @@
+// rv-34-it service -----==============
+
+.rv-34-gallary{
+    .rv-34-section-heading{
+        @include sm{
+            text-align: center;
+
+        }
+    }
+}
+.rv-34-portfolio-item {
+    img {
+        border-radius: 0;
+    }
+
+    .rv-33-gallary-item__overlay {
+        backdrop-filter: blur(0);
+        background-color: #ffaa17e8;
+        border-radius: 0;
+
+        &-icon {
+            top: 40px;
+            right: 40px;
+            background-color: transparent;
+            color: white;
+            font-weight: 400;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            font-size: 22px;
+            transform: none;
+            left: unset;
+        }
+
+        &-title {
+            @include xl{
+                left: 20px;
+                bottom: 20px;
+            }
+            span {
+                font-family: var(--mulish);
+                font-size: 14px;
+                font-weight: 600;
+                color: $text-color-5;
+                text-transform: uppercase;
+
+                @include xs{
+                    font-size: 12px;
+                }
+            }
+
+            .rv-34-gallary-item__overlay-title {
+                display: block;
+                font-family: var(--mulish);
+                font-size: 24px;
+                font-weight: 800;
+                color: $text-color-5;
+                transition: 0.3s all;
+
+                &:hover{
+                    color: white;
+                }
+
+                @include xl{
+                    font-size: 20px;
+                }
+                @include xs{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.rv-34-porfolio-slider-controller {
+    width: auto !important;
+
+    @include sm{
+        display: none;
+    }
+}
+
+.rv-34-porfolio-bullet {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    opacity: 1;
+    border: 1px solid transparent;
+    background-color: transparent;
+    position: relative;
+    transition: 0.4s ease;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 8px;
+        height: 8px;
+        background-color: #ddd;
+        border-radius: 50%;
+        transition: 0.4s ease;
+    }
+}
+
+    .swiper-pagination-bullet-active {
+        border-color: $rv-34-color-1;
+
+        &::before{
+            background-color: $rv-34-color-1;
+        }
+    }
+
+    // rv-35- startup ====================
+
+    .rv-35-clients{
+        @include md{
+            margin-bottom: 40px;
+        }
+    }
+    .rv-35-brand{
+        padding: 80px 0;
+        border: 1px solid #E6E6E6;
+        text-align: center;
+        border-left: none;
+
+        @include md{
+            padding: 60px 0;
+        }
+        @include xs{
+            padding: 40px 0;
+        }
+        @include xxs{
+            padding: 30px 0;
+        }
+    }

@@ -1,0 +1,155 @@
+@use './variables' as *;
+
+
+@function _rgba($color, $opacity: 1) {
+    @return unquote("rgba(#{red($color)}, #{green($color)}, #{blue($color)}, #{$opacity})");
+}
+
+@mixin transition($time) {
+    -webkit-transition: all $time linear 0s;
+    -moz-transition: all $time linear 0s;
+    -ms-transition: all $time linear 0s;
+    -o-transition: all $time linear 0s;
+    transition: all $time linear 0s;
+}
+
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+
+@mixin s-btn($color, $before_color) {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50px;
+    color: var($color);
+
+    &::before {
+        background-color: var($before_color);
+    }
+}
+
+// =========== rv-31-=======================
+@mixin rv-31-btn {
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-family: var(--inter);
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    line-height: 1;
+    height: 50px;
+}
+
+@mixin rv-31-sec-title {
+    font-family: var(--inter);
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 50px;
+    color: $text-color-1;
+    margin-bottom: 15px;
+
+    @include xl {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    @include lg {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    @include md {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    @include sm {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    @include xs {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    @include xxs {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@mixin rv-32-sec-title {
+    font-family: var(--inter);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    color: $text-color-5;
+    margin: 0;
+
+    @include xl {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    @include lg {
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+    @include sm {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    @include xs {
+        font-size: 27px;
+        line-height: 34px;
+    }
+
+    @include xxs {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+}
+
+@mixin rv-34-client {
+    background-color: #648EDD;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+
+    @include lg {
+        height: 60px;
+        width: 60px;
+    }
+
+    @include md {
+        height: 50px;
+        width: 50px;
+    }
+}
